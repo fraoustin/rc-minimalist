@@ -292,6 +292,10 @@ ul#toolbar-menu{
     right: 5px !important;
 }
 
+body.action-compose .floating-action-buttons.reply {
+    display: none !important;
+}
+
 .floating-action-buttons.reply {
     bottom: 35px !important;
 }
