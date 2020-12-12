@@ -1,0 +1,19 @@
+{
+  "name": "minimalist",
+  "author": "fraoustin",
+  "url": "http://fraoustin.fr",
+  "license": "Creative Commons Attribution-ShareAlike",
+  "license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "localization": true,
+  "meta": {},
+  "links": {
+      "stylesheet": [
+        "/minimalist.css"
+      ]
+  },
+	"config": {
+    "favicon": "/images/mail.ico",
+    "skin_logo": "../skins/rc-minimalist/images/mail.png"
+	},
+  "extends": "elastic"
+}

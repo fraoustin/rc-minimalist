@@ -1,0 +1,338 @@
+/* general */
+body.task-mail #layout-list #messagelist-header,
+body.task-mail #layout>div>.headerr,
+body.task-settings #layout-sidebar .header,
+body.task-settings #layout-list .header,
+body.task-settings #layout-content .header,
+body.task-addressbook #layout-list .header  {
+    display: none !important;
+}
+
+html.mobile #messagelist-content {
+    padding: 5px;
+}
+
+html:not(.mobile) body.task-mail #layout-sidebar.hide{
+    display: none !important;
+}
+
+#layout>div>.footer {
+    border-top: unset !important;
+    height: 58px;
+}
+
+#layout-list,
+#layout-sidebar {
+    border-right: unset !important;
+}
+
+.listing tbody td, .listing li {
+    border-bottom: unset !important;
+}
+
+@media screen and (min-width: 768px) {
+    body.task-mail #layout-list.minimalist {
+        max-width: 50% !important;
+        flex: 0 0 auto !important;
+    }
+}
+
+
+/* search bar message */
+input, button {
+    font-size: 1rem !important;
+}
+
+.button.sliders:before {
+    content: "\f1de";
+}
+
+.menu a.select:before {
+    content: "\f14a" !important;
+}
+
+.searchbar.menu {
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.burger:before {
+    content: "\f0c9" !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .searchbar.menu a.icon.back-sidebar-button.folders:before,
+    .searchbar.menu a.icon.task-menu-button:before,
+    .searchbar.menu a.toolbar-menu-button:before {
+        height: unset !important;
+        padding-left: 5px;
+    }
+    .searchbar.menu a.burger {
+        display: none;
+    }
+
+}
+
+
+html.mobile .nomobile {
+    display: none !important;
+}
+
+
+/* list messages */
+tr.message:hover {
+    background-color: #f4f4f4;
+}
+
+table.messagelist td.subject span.subject {
+    display: flex;
+}
+
+table.messagelist td.subject a {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu .shortcut-minimalist::before {
+    font-size: 1.1em;
+    margin-right: 0.5em;
+}
+
+td.subject .menu {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    td.subject:hover .menu,
+    tr.message.selected td.subject .menu {
+        display: unset;
+    }
+}
+
+.message.unread td.subject .menu .unread {
+    display: none
+}
+
+.message:not(.unread) td.subject .menu .read {
+    display: none
+}
+
+.listing li.selected, .listing tr.selected td {
+    background-color: #f4f4f4 !important;
+}
+
+html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
+    border-left: unset !important;
+}
+
+.circle.message {
+    width: 40px;
+    padding: unset !important;
+}
+
+.circle.message .badge{
+    height: 40px;
+    width: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.circle.message .badge.a,
+.circle.message .badge.t{
+    background: #007bff;
+}
+
+.circle.message .badge.b,
+.circle.message .badge.u{
+    background: #6610f2;
+}
+
+.circle.message .badge.c,
+.circle.message .badge.v{
+    background: #6f42c1;
+}
+
+.circle.message .badge.d,
+.circle.message .badge.w{
+    background: #e83e8c;
+}
+
+.circle.message .badge.e,
+.circle.message .badge.x{
+    background: #dc3545;
+}
+
+.circle.message .badge.f,
+.circle.message .badge.y{
+    background: #fd7e14;
+}
+
+.circle.message .badge.g,
+.circle.message .badge.z{
+    background: #28a745;
+}
+
+.circle.message .badge.h{
+    background: #20c997;
+}
+
+.circle.message .badge.i{
+    background: #17a2b8;
+}
+
+.circle.message .badge.j{
+    background: #17a2b8;
+}
+
+.circle.message .badge.k{
+    background: #6c757d;
+}
+
+.circle.message .badge.l{
+    background: #343a40;
+}
+
+.circle.message .badge.m{
+    background: #007bff;
+}
+
+.circle.message .badge.n{
+    background: #6c757d;
+}
+
+.circle.message .badge.o{
+    background: #28a745;
+}
+
+.circle.message .badge.p{
+    background: #17a2b8;
+}
+
+.circle.message .badge.q{
+    background: #007bff;
+}
+
+.circle.message .badge.r{
+    background: #ffc107;
+}
+
+.circle.message .badge.s{
+    background: #dc3545;
+}
+
+.circle.message .badge {
+    opacity: 0.4;
+}
+
+.circle.message .badge.unread {
+    opacity: 1;
+}
+
+table.messagelist td.subject .msgicon{
+    display: none;
+}
+
+.messagelist td.subject span.fromto {
+    padding-left: unset !important;
+    font-style: italic;
+}
+
+/* message */
+#message-header .extwin{
+    float: right;
+}
+
+/* button compose */
+@media screen and (min-width: 769px) {
+    body.task-mail .floating-action-buttons {
+        display: unset !important;
+    }
+    table.messagelist {
+        padding-bottom: 70px;
+    }
+}
+
+/* toolbar message */
+#layout>div>.header,
+.popover .menu .dropbutton a.dropdown {
+    border-bottom: unset !important;
+    background-color: unset !important;
+}
+
+
+ul#toolbar-menu{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    ul#toolbar-menu li {
+        float: right;
+    }
+    ul#toolbar-menu {
+        padding-top: 20px
+    }
+    #layout-sidebar .header {
+        margin-top: 10px !important;
+        margin-bottom: 8px !important;
+    }
+
+}
+
+.disabled {
+    display: none !important;
+}
+
+.floating-action-buttons {
+    right: 5px !important;
+}
+
+.floating-action-buttons.reply {
+    bottom: 35px !important;
+}
+.floating-action-buttons.reply a.reply:before{
+    content: "\f122" !important;
+}
+.floating-action-buttons.reply a.reply{
+    background: #5cb85c !important;
+    border-color: #5cb85c !important;
+    cursor: pointer;
+}
+.floating-action-buttons.reply a.reply:hover{
+    color: white !important;
+}
+
+body.task-addressbook .floating-action-buttons {
+    display: unset !important;
+}
+
+/* toolbar left */
+.popover-header {
+    display: none !important;
+}
+
+#taskmenu a.compose {
+    display: none;
+}
+
+@media screen and (min-width: 481px){
+    #layout-menu,
+    #taskmenu .special-buttons,
+    #taskmenu a.selected {
+        background-color: unset !important;
+    }
+    #taskmenu a:hover,
+    #taskmenu .special-buttons a:hover {
+        background-color: #f4f4f4 !important;
+    }
+    #taskmenu a,
+    #taskmenu a.selected {
+        color:  unset !important;
+    }
+}
+
