@@ -131,7 +131,7 @@ if (rcmail.env.task == 'mail') {
             }
         })
     $('#layout-list .searchbar.menu').prepend(burger);
-    $('body.task-mail #layout-sidebar').addClass('hide')
+    $('body.task-mail #layout-sidebar:not(.sidebar-right)').addClass('hide')
 
     $('#layout-list .searchbar.menu').prepend($('#messagelist-header .back-sidebar-button.folders'));
     $('#layout-list .searchbar.menu').prepend($('#messagelist-header .task-menu-button'));
