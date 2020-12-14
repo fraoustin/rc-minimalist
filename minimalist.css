@@ -121,6 +121,7 @@ td.subject .menu {
 
 .listing li.selected, .listing tr.selected td {
     background-color: #f4f4f4 !important;
+    background-color: black !important;
 }
 
 html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
@@ -313,9 +314,6 @@ body.action-compose .floating-action-buttons.reply {
 
 body.task-addressbook .floating-action-buttons {
     display: unset !important;
-}
-.popupmenu .listing li.selected {
-    color: unset;
 }
 
 /* toolbar left */
