@@ -314,6 +314,9 @@ body.action-compose .floating-action-buttons.reply {
 body.task-addressbook .floating-action-buttons {
     display: unset !important;
 }
+.popupmenu .listing li.selected {
+    color: unset;
+}
 
 /* toolbar left */
 .popover-header {
